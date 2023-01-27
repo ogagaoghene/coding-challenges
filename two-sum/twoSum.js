@@ -1,4 +1,4 @@
-//TNaive two pointer sum - O(nxn) 
+//Naive two pointer sum - O(nxn) 
 //Iterate through an array of numbers searching for two numbers that sums up to the target and return true if found
 function twoSum(arr, target) {
   if(arr.length < 2) {
