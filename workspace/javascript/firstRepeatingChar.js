@@ -12,3 +12,13 @@ let firstRepeatingCharacter = (function(string){
 
 console.log(firstRepeatingCharacter);
 
+// An improved algorithm that solves same problem in 0(n) time complexity using a Hash table
+let firstRepeatingCharacter2 = (function(string) {
+  let visited = {};
+  for (ch of string) {
+    if(visited[ch]) return ch; 
+    else visited[ch] = true;
+  }
+})("apple");
+
+console.log(firstRepeatingCharacter2);
