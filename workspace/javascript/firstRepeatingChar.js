@@ -22,3 +22,10 @@ let firstRepeatingCharacter2 = (function(string) {
 })("apple");
 
 console.log(firstRepeatingCharacter2);
+
+
+let add = (function(a, b) {
+  return (a+b);
+})(12,10);
+
+console.log(add);
