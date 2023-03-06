@@ -15,5 +15,5 @@ const venues = {
 
 for (var key in venues) {
   var value = venues[key];
-  console.log(key, value, checkCapacity(value[0], value[1]));
+  console.log(key, '-', checkCapacity(value[0], value[1]));
 }
