@@ -1,7 +1,9 @@
 def main():
-  print('The sum of the list is {}'.format(num_list([1,2,3,4,5])))
+  print('The sum of the list is {}'.format(num_list1([1,2,3,4,5])))
+  print('The sum of the list is {}'.format(num_list2([1,2,3,4,5])))
 
-def num_list(array):
+# Iterative implementation
+def num_list1(array):
   total = 0
 
   for num in array:
@@ -9,6 +11,12 @@ def num_list(array):
   
   return total
 
-
-if __name__ == '__main__':
+# Recursive implementation 
+def num_list2(arr):
+  if len(arr) == 1:
+    return arr[0]
+  else:
+    return arr[0] + num_list2(arr[1:])
+  
+if __name__ == '__main__': 
   main()
