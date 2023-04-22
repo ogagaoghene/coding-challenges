@@ -14,5 +14,8 @@ const reverseArray = (arr) => {
     return arr;
 }
 
-let sample = [1,2,3,4];
-console.log(reverseArray(sample));
+let sample1 = "foam";
+let sample2 = [1,2,3,4,5,6];
+
+console.log(reverseArray(sample1.split('')));
+console.log(reverseArray(sample2));
