@@ -11,12 +11,11 @@ secondButton.addEventListener('mouseover', function(event) {
 
 document.body.addEventListener('timeEvent', stateTime);
 
-const stateTime = (e) {
-    alert(e.details);
+function stateTime(event) {
+    alert("The event time is: " + event.detail);
 }
 
-const myEvent = new CustomEvent('timeEvent',
-    { 
-        details: new Date()
+var myEvent = new CustomEvent('timeEvent', { 
+        'detail': new Date()
     }
 );
