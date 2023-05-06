@@ -22,4 +22,14 @@ let incrementCounter = function () {
     return counter;
 }
 
+let incrementCounterModified = () => {
+    let counter = 0;
+    while(counter < 3) {
+        console.log("count:", counter);
+        counter++;
+    }
+    return counter;
+}
+
 incrementCounter();
+incrementCounterModified();
