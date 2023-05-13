@@ -1,5 +1,5 @@
 def main():
-  num = 11
+  num = int(input("Enter the number: "))
   flag = evenOdd(num)
   if (flag == 1):
     print("Number is Even")
