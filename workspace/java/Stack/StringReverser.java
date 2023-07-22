@@ -14,4 +14,12 @@ public class StringReverser {
 
         return reversed.toString();
     }
+
+    public String reverse2(String input) {
+        String newString = "";
+        for(int idx = input.length()-1; idx >= 0; idx--) {
+            newString += input.charAt(idx);
+        }
+        return newString;
+    }
 }
