@@ -22,4 +22,13 @@ public class StringReverser {
         }
         return newString;
     }
+
+    public String recursiveReversal(String input) {
+        if (input.isEmpty()) {
+            return "";
+        }
+        else {
+            return recursiveReversal(input.substring(1)) + input.charAt(0);
+        }
+    }
 }
