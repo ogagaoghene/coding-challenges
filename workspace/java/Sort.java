@@ -22,17 +22,29 @@ public class Sort {
         }
     }
 
-    public static void main(String[] argv) {
-        int[] list = new int[]{10,2,1,4,12,3};
-        System.out.println("Before Selection Sort"); 
-        for (int item : list) {
-            System.out.print(item + " ");
+    public static void insertionSort(int[] arr) {
+        for (int idx = 1; idx < arr.length; idx++) {
+            if (arr[idx] < arr[idx-1]) {
+                int toInsert = arr[idx];
+
+                int j = idx;
+                do {
+                    arr[j] = arr[j-1];
+                    j = j - 1;
+                } while( j > 0 && toInsert < arr[j-1]);     
+                arr[j] = toInsert;
+            }
         }
-        System.out.println();
-        Sort.selectionSort(list);
-        System.out.println("After Selection Sort");
+
+    }
+
+    public static void main(String[] argv) {
+        int[] list = new int[]{10,2,1,4,12,3,5};
+        Sort.insertionSort(list);
         for(int item : list) {
             System.out.print(item + " ");
         }
+
+
     }
 }
