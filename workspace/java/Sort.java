@@ -38,13 +38,25 @@ public class Sort {
 
     }
 
+    public static int[] bubbleSort(int[] a) {
+        for(int i = 0; i < a.length-1; i++) {
+            for(int j = 0; j < a.length-1; j++) {
+                if(a[j] > a[j+1]) {
+                    // then swap these two
+                    int temp = a[j];
+                    a[j] = a[j+1];
+                    a[j+1] = temp;
+                }
+            }
+        }
+        return a;
+    }
+
     public static void main(String[] argv) {
         int[] list = new int[]{10,2,1,4,12,3,5};
-        Sort.insertionSort(list);
+        Sort.bubbleSort(list);
         for(int item : list) {
             System.out.print(item + " ");
         }
-
-
     }
 }
