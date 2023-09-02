@@ -1,8 +1,8 @@
-def displayUserName():
-    print('Ogagaoghene')
+def displayName():
+    print("Ogagaoghene")
 
 def main():
-   print(displayUserName()
+    displayName()
 
-if __name__ == '__main__': 
-  main()
+if __name__ == '__main__':
+    main()
