@@ -1,5 +1,9 @@
+def prompt():
+    firstname = input("Please enter your firstname: ")
+    print("Hello", firstname)
+
 def displayName():
-    print("Ogagaoghene")
+    prompt()
 
 def main():
     displayName()
