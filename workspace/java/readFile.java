@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class readBook {
+class readFile {
 
     public static List<String> getFileContent(String filename) {
         List<String> words = new ArrayList<String>();
