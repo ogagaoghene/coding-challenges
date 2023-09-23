@@ -26,5 +26,5 @@ const RomanNumeralToInteger = function(str) {
     return total;
 }
 
-let numeral = "X";
+let numeral = "XI";
 console.log(RomanNumeralToInteger(numeral));
