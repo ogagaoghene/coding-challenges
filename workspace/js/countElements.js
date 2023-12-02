@@ -4,6 +4,9 @@ const countElement = (arr, target) => {
         if (arr[idx] == target) {
             count = count + 1;
         }
+        else if (arr[idx] > target) {
+            break;
+        }
     }
     return count;
 }
